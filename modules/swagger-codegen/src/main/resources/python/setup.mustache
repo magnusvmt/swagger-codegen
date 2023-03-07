@@ -6,9 +6,7 @@ from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "{{{projectName}}}"
 VERSION = "{{packageVersion}}"
-{{#apiInfo}}
-{{#apis}}
-{{^hasMore}}
+
 # To install the library, run the following
 #
 # python setup.py install
@@ -44,6 +42,3 @@ setup(
     {{appDescription}}  # noqa: E501
     """
 )
-{{/hasMore}}
-{{/apis}}
-{{/apiInfo}}
